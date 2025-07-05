@@ -23,3 +23,17 @@ This project demonstrates how to build a **personal hydration assistant** using 
 ✅ Store and retrieve hydration data using **SQLite**  
 ✅ Integrate **LangChain** & **OpenAI** to deliver AI-driven feedback  
 ✅ Create a visual, interactive dashboard with **Streamlit**
+
+
+
+
+## 🛠️ Tech Stack
+
+| Tool         | Purpose                             |
+|--------------|-------------------------------------|
+| **Python**   | Core programming language           |
+| **FastAPI**  | Backend API for data logging        |
+| **SQLite**   | Lightweight database for persistence|
+| **LangChain**| AI assistant & prompt orchestration |
+| **OpenAI**   | Personalized hydration feedback     |
+| **Streamlit**| UI & data visualization dashboard   |
