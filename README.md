@@ -12,3 +12,14 @@ This project demonstrates how to build a **personal hydration assistant** using 
 - Log daily water intake
 - Visualize hydration trends on a sleek dashboard
 - Get personalized feedback from an AI assistant built with LangChain and OpenAI
+
+
+
+
+## 🚀 What You'll Learn
+
+✅ Master Python fundamentals through real-world application  
+✅ Work with **FastAPI** to build a robust backend  
+✅ Store and retrieve hydration data using **SQLite**  
+✅ Integrate **LangChain** & **OpenAI** to deliver AI-driven feedback  
+✅ Create a visual, interactive dashboard with **Streamlit**
