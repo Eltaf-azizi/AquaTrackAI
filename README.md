@@ -59,6 +59,19 @@ cd aqua-sense-ai
 # 2. Create a virtual environment
 ```python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
+
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the FastAPI backend
+cd backend
+uvicorn main:app --reload
+
+# 5. Run the Streamlit dashboard
+cd ../dashboard
+streamlit run app.py
+
 ```
 
 
