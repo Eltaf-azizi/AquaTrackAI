@@ -37,3 +37,15 @@ This project demonstrates how to build a **personal hydration assistant** using 
 | **LangChain**| AI assistant & prompt orchestration |
 | **OpenAI**   | Personalized hydration feedback     |
 | **Streamlit**| UI & data visualization dashboard   |
+
+
+
+## 📊 Features
+
+- 💧 **Water Intake Logging**: Add and track your daily water intake  
+- 🧠 **AI Assistant**: Get suggestions and tips based on your hydration habits  
+- 📈 **Dashboard**: Visual feedback and daily stats powered by Streamlit  
+- 🗂 **Database Support**: Persist user data using SQLite
+
+
+
