@@ -34,7 +34,10 @@ def get_intake_history(user_id):
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     cursor.execute("SELECT intake_ml, date FROM water_intake WHERE user_id?" (user_id))
-    record = cursor.fetchall()
+    records = cursor.fetchall()
     conn.commit()
-    return record
+    return records
+
+
+create_tables()
     
