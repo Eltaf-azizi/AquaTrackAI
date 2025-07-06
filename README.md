@@ -48,4 +48,17 @@ This project demonstrates how to build a **personal hydration assistant** using 
 - 🗂 **Database Support**: Persist user data using SQLite
 
 
+## 🔧 Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/aqua-sense-ai.git
+cd aqua-sense-ai
+
+
+# 2. Create a virtual environment
+```python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
+
 
