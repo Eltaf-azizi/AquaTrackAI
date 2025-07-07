@@ -74,4 +74,32 @@ streamlit run app.py
 
 ```
 
+## 🤖 AI Assistant Setup
+
+Make sure you have your OpenAI API key:
+
+```bash
+Copy
+Edit
+export OPENAI_API_KEY="your-openai-key"
+```
+Or create a .env file in the root directory:
+
+```ini
+Copy
+Edit
+OPENAI_API_KEY=your-openai-key
+```
+
+## 🤝 Contributing
+We welcome medical professionals & AI researchers to improve diagnostic accuracy!
+
+ - Report issues for misdiagnoses
+
+ - Suggest PubMed query optimizations
+
+ - Add new symptom parsing rules
+
+<h3 align="center">Happy Coding!</h3>
+
 
