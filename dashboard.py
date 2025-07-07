@@ -15,3 +15,19 @@ if "tracker_started" not in st.session_state:
 
 if not st.session_state.tracker_started:
     st.title(" Welcome to AI water tracker")
+    st.markdown("""
+    Track your daily hydration with the help of AI assistnt.
+    log your intake, get smart feedback and stay healthy effortlessly
+    """)
+
+
+    if st.button("Start Tracking"):
+        st.session_state.tracker_started = True
+        st.experimental_rerun()
+
+
+else: 
+    # Slidebar: Intake Input
+    st.sidebar.header("Log Your Water Intake")
+    user_id = st.sidebar.text_input("User ID", value="user_123")
+    intake_ml = st.sidebar.number_input("Water intake (ml)", min_value=0, step=100)
