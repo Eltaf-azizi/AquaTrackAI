@@ -28,4 +28,5 @@ async def log_water_intake(request: WaterIntakeRequest):
 
 @app.get("/history/{user_id}")
 async def get_water_history(user_id: str):
-    
+    history = get_intake_history(user_id)
+    return {"user_id": user_id, "history": history}
