@@ -37,3 +37,41 @@ This project demonstrates how to build a **personal hydration assistant** using 
 | **LangChain**| AI assistant & prompt orchestration |
 | **OpenAI**   | Personalized hydration feedback     |
 | **Streamlit**| UI & data visualization dashboard   |
+
+
+
+## 📊 Features
+
+- 💧 **Water Intake Logging**: Add and track your daily water intake  
+- 🧠 **AI Assistant**: Get suggestions and tips based on your hydration habits  
+- 📈 **Dashboard**: Visual feedback and daily stats powered by Streamlit  
+- 🗂 **Database Support**: Persist user data using SQLite
+
+
+## 🔧 Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/aqua-sense-ai.git
+cd aqua-sense-ai
+
+
+# 2. Create a virtual environment
+```python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the FastAPI backend
+cd backend
+uvicorn main:app --reload
+
+# 5. Run the Streamlit dashboard
+cd ../dashboard
+streamlit run app.py
+
+```
+
+
