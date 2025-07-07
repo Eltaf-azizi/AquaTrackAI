@@ -12,3 +12,20 @@ agent = WaterIntakeAgent
 class WaterIntakeRequest(BaseModel):
     user_id: str
     intake_ml: int
+
+
+
+
+@app.post("/log-intake")
+async def log_water_intake(request: WaterIntakeRequest):
+    log_intake(request.user_id, request.intake_ml)
+    analysis = agent.analyze_intake(request.intake_ml)
+    log_message(f"user {request.user_id} logged {request.intake_ml}")
+    return {"message": "Water intake logged successfully", "analysis": analysis}
+
+
+
+
+@app.get("/history/{user_id}")
+async def get_water_history(user_id: str):
+    
