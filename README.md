@@ -74,4 +74,17 @@ streamlit run app.py
 
 ```
 
+🤖 AI Assistant Setup
+Make sure you have your OpenAI API key:
+
+bash
+Copy
+Edit
+export OPENAI_API_KEY="your-openai-key"
+Or create a .env file in the root directory:
+
+ini
+Copy
+Edit
+OPENAI_API_KEY=your-openai-key
 
