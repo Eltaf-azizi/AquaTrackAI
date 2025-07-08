@@ -31,3 +31,22 @@ else:
     st.sidebar.header("Log Your Water Intake")
     user_id = st.sidebar.text_input("User ID", value="user_123")
     intake_ml = st.sidebar.number_input("Water intake (ml)", min_value=0, step=100)
+
+
+
+
+    if st.sidebar.button("Submit"):
+        if user_id and intake_ml:
+            log_intake(user_id, intake_ml)
+            st.success(f"Logged {intake_ml}ml for {user_id}")
+
+
+
+            agent = WaterIntakeAgent()
+            feedback = agent.analyze_intake(intake_ml)
+            st.info(f"AI feedback: ({feedback})")
+
+        
+    
+    # Divider
+    st.markdown("---")
