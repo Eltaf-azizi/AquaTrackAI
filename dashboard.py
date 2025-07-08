@@ -50,3 +50,23 @@ else:
     
     # Divider
     st.markdown("---")
+
+
+
+    # History Section
+    st.header("Water Intake History")
+
+
+
+    if user_id:
+        history = get_intake_history(user_id)
+        if history:
+            dates = [datetime.strptime(row[1], "%Y-%m-%d") for row in history]
+            values = [row[0] for row in history]
+
+
+
+            df = pd.DataFrame({
+                "Date": dates,
+                "Water Intake (ml)": values
+            })
