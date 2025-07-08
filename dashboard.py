@@ -70,3 +70,11 @@ else:
                 "Date": dates,
                 "Water Intake (ml)": values
             })
+
+
+
+            st.dataframe(df)
+            st.line_chart(df, x="Water Intake (ml)")
+        
+        else:
+            st.warning("No water intake data found. Please log your intake first.")
